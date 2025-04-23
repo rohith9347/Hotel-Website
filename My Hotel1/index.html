@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Luxe Hotel & Resort</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon image.png">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Grand Luxe</h1>
+            <span class="tagline">HOTEL & RESORT</span>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fas fa-bed"></i> Stay with Us</a></li>
+                <li><a href="#"><i class="fas fa-utensils"></i> Restaurants</a></li>
+                <li><a href="#"><i class="fas fa-spa"></i> Spa Facilities</a></li>
+                <li><a href="#"><i class="fas fa-glass-cheers"></i> Weddings</a></li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-compass"></i> Discovery <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#"><i class="fas fa-tree"></i> Natural Surroundings</a></li>
+                        <li><a href="#"><i class="fas fa-map-marked-alt"></i> Where to Visit</a></li>
+                        <li><a href="#"><i class="fas fa-route"></i> Take a Tour</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Image Carousel -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item fade">
+                    <img src="Hotel pool.avif" alt="Luxury Hotel Pool">
+                    <div class="carousel-caption">
+                        <h2>Experience Unparalleled Luxury</h2>
+                        <p>Indulge in our world-class amenities and breathtaking views</p>
+                        <a href="#" class="btn-primary">Book Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item fade">
+                    <img src="Hotel suite.avif" alt="Luxury Hotel Suite">
+                    <div class="carousel-caption">
+                        <h2>Elegant Accommodations</h2>
+                        <p>Relax in our beautifully designed suites with premium amenities</p>
+                        <a href="#" class="btn-primary">Explore Rooms</a>
+                    </div>
+                </div>
+                <div class="carousel-item fade">
+                    <img src="Hotel restaurant.avif" alt="Luxury Hotel Restaurant">
+                    <div class="carousel-caption">
+                        <h2>Exquisite Dining Experience</h2>
+                        <p>Savor gourmet cuisine prepared by our award-winning chefs</p>
+                        <a href="#" class="btn-primary">View Restaurants</a>
+                    </div>
+                </div>
+                
+                <!-- Navigation dots -->
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                
+                <!-- Previous and Next buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Welcome to Grand Luxe</h2>
+                    <div class="divider">
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <p>Experience luxury redefined in the heart of paradise</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Three Column Section -->
+        <section class="about-section">
+            <div class="container">
+                <div class="columns-wrapper">
+                    <div class="column">
+                        <div class="column-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <h2>Our Legacy</h2>
+                        <div class="column-divider"></div>
+                        <p>Nestled in the heart of a breathtaking landscape, Grand Luxe offers an unparalleled experience of comfort and elegance. With a commitment to exceptional service since 1925, we ensure that every moment of your stay is memorable.</p>
+                        <p>Our establishment combines traditional charm with modern amenities to create a unique atmosphere that captivates our guests from around the world.</p>
+                        <a href="#" class="btn-secondary">Discover Our Story</a>
+                    </div>
+                    
+                    <div class="column featured">
+                        <div class="column-icon">
+                            <i class="fas fa-concierge-bell"></i>
+                        </div>
+                        <h2>Exceptional Amenities</h2>
+                        <div class="column-divider"></div>
+                        <p>Indulge in our world-class facilities designed to provide the ultimate relaxation experience. From our infinity pool overlooking stunning vistas to our state-of-the-art fitness center, we have everything you need.</p>
+                        <p>Our award-winning spa offers a range of treatments using premium products, ensuring you leave feeling refreshed and revitalized. Experience luxury at its finest.</p>
+                        <a href="#" class="btn-secondary">Explore Amenities</a>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="column-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h2>Culinary Excellence</h2>
+                        <div class="column-divider"></div>
+                        <p>Our restaurants serve exquisite cuisine prepared by internationally renowned chefs. Using only the freshest local ingredients, each dish is a masterpiece that delights the senses and creates unforgettable dining experiences.</p>
+                        <p>From intimate dining to grand celebrations, our culinary team can cater to all your needs with the finest local and international flavors.</p>
+                        <a href="#" class="btn-secondary">View Dining Options</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Highlights -->
+        <section class="features-section">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature">
+                        <i class="fas fa-swimming-pool"></i>
+                        <h3>Infinity Pool</h3>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-spa"></i>
+                        <h3>Luxury Spa</h3>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-dumbbell"></i>
+                        <h3>Fitness Center</h3>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-wifi"></i>
+                        <h3>Free Wi-Fi</h3>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-car"></i>
+                        <h3>Valet Parking</h3>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-glass-martini-alt"></i>
+                        <h3>Premium Bar</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Grand Luxe Hotel</h3>
+                <p>123 Luxury Avenue<br>Hyderabad <br>Phone: (91+) 9347917466</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Rooms & Suites</a></li>
+                    <li><a href="#">Dining</a></li>
+                    <li><a href="#">Spa & Wellness</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+                <p>Subscribe to our newsletter for exclusive offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Grand Luxe Hotel & Resort. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for the carousel functionality
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("carousel-item");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+
+        // Auto slide
+        setInterval(function() {
+            plusSlides(1);
+        }, 5000);
+
+        // Mobile dropdown toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdowns = document.querySelectorAll('.dropdown');
+            
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
